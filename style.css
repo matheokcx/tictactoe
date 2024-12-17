@@ -1,0 +1,116 @@
+body {
+    width: 99vw;
+    height: 98vh;
+    background-color: rgb(22, 22, 77);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+table {
+    width: 60vw;
+    height: 95vh;
+    background-color: #4c2c92;
+    border-spacing: 10px;
+    padding: 10px;
+    margin: auto;
+    /* sous border-radius + padding = 14 + 10 = 24px*/
+    border-radius: 24px;
+}
+
+table td {
+    width: 20%;
+    height: 20%;
+    background-color: #191437;
+    border-radius: 14px;
+    font-size: 48px;
+    transition: 0.5s;
+}
+
+table td button {
+    cursor: pointer;
+    width: 60%;
+    height: 40%;
+    border-radius: 18px;
+    background-color: white;
+    font-size: large;
+    font-weight: 800;
+    margin-left: 20%;
+}
+
+table td p {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+}
+
+table td:hover {
+    transform: scale(1.05);
+    background-color: #6a4cae;
+}
+
+input {
+    width: 35px;
+    height: 30px;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+}
+
+aside {
+    padding-top: 30px;
+    width: 30vw;
+    height: 98%;
+    background-color: white;
+    border-radius: 18px;
+    display: grid;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+aside div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px
+}
+
+aside input[type='text'] {
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    width: 40%;
+    height: 35px;
+    margin-top: 30px;
+
+}
+
+.leaderboard {
+    width: 90%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        display: grid;
+    }
+
+    table {
+        width: 95vw;
+        height: 50vh;
+    }
+
+    aside {
+        width: 95vw;
+        height: 45vh;
+    }
+
+    aside h1 {
+        display: none;
+    }
+}

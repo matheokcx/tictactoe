@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>TicTacToe</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id='c1'></td>
+            <td id='c2'></td>
+            <td id='c3'></td>
+        </tr>
+        <tr>
+            <td id='c4'></td>
+            <td id='c5'></td>
+            <td id='c6'></td>
+        </tr>
+        <tr>
+            <td id='c7'></td>
+            <td id='c8'></td>
+            <td id='c9'></td>
+        </tr>
+    </table>
+    <aside class="conteneur">
+        <h1><u>TicTacToe</u></h1>
+        <div>
+            <label for="nomJoueur1">X: </label>
+            <input type="text" id="nomJoueur1" placeholder="Nom du joueur 1" value='Joueur 1' />
+            <p id="tempsJ1"></p>
+            <input type="color" id="couleurJ1" />
+        </div>
+        <p id="currentPlayer"></p>
+        <div>
+            <label for="nomJoueur2">O: </label>
+            <input type="text" id="nomJoueur2" placeholder="Nom du joueur 2" value='Joueur 2' />
+            <p id="tempsJ2"></p>
+            <input type="color" id="couleurJ2" />
+        </div>
+
+        <h2><u>Classement des meilleurs temps: </u></h2>
+        <div id="classement" class="leaderboard"></div>
+    </aside>
+</body>
+
+</html>
